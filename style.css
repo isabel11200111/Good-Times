@@ -1,3 +1,8 @@
+/* example of using variables in css */
+:root {
+  --orange:#ff3c15;
+}
+
 body{
 font-family: 'HK-HKGrotesk-Medium', sans-sans-serif;
 font-size: 18px;
@@ -15,10 +20,55 @@ a {
   color: #414141;
 }
 
+#about .heading-orange,
+#speakers .heading-orange{
+  font-size: 120px;
+  -webkit-text-stroke-color: var(--orange);
+  margin-bottom: 3rem;
+  color:var(--orange);
+}
+
+#about {
+  font-family: 'HK-Grotesk-Regular';
+}
+
 .container {
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+blockquote{
+  font-family: 'HK-Grotesk-Medium';
+  color: var(--orange);
+  font-size: 30px;
+}
+
+.cite {
+  font-size: 20px;
+  display: inline-block;
+  color: var(--orange);
+  line-height: 1;
+  padding: 24px 18px;
+  border-radius: 100%;
+  border: solid 3px var(--orange);
+}
+
+
+.speaker-image {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.speaker-name,
+.speaker-title {
+  margin: 0;
+  line-height: 1.33;
+}
+
+.speaker-title {
+  color: #979797;
+  font-family: 'HK-Grotesk-Regular', sans-serif;
 }
