@@ -1,0 +1,24 @@
+body{
+font-family: 'HK-HKGrotesk-Medium', sans-sans-serif;
+font-size: 18px;
+line-height: 1.5;
+color: #414141;
+
+background-image: url(images/background.jpg);
+background-size: 100% auto;
+background-position: center top;
+background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: #414141;
+}
+
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
