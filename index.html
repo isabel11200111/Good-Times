@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="register.css">
 
     <title></title>
     <body>
@@ -84,16 +85,16 @@
 
       <div class="flex flex-wrap justify-between mb5-ns">
         <div class="col-12 sm-col-6 md-col-5 pt5-m pt5-l mb4 mb0-ns">
-          <img src="images/about-1.jpg" alt="">
+          <img src="images/about-1.jpg" alt="" class="image fade db">
         </div>
         <div class="col-12 sm-col-6 md-col-4 mb4 mb0-ns">
-          <img src="images/about-2.jpg" alt="">
+          <img src="images/about-2.jpg" alt="" class="image fade db">
         </div>
       </div>
 
       <div class="flex flex-wrap justify-between mb4 mb5-ns">
         <div class="col-12 sm-col-5 md-col-4 sm-indent-1 md-indent-2 pt5-ns mb4 mb0-ns">
-          <img src="images/about-3.jpg" alt="">
+          <img src="images/about-3.jpg" alt="" class="image fade db">
         </div>
         <div class="col-12 sm-col-5 md-col-4 mb4 mb0-ns">
           <blockquote >"Design is as much an act of spacing as an act of marking."
@@ -146,11 +147,102 @@
 
           </div>
         </div>
+        <!-- Schedule -->
+        <div class="about pt5-ns mb4 mb5-ns" id="schedule">
+          <h1 class="heading heading-orange"> Schedule</h1>
+          <!-- combo of flex and overflow-auto gives a scrollbar when space is limited -->
+          <div class="schedule-container flex overflow-auto">
+            <div class="schedule-day">
+              Saturday Mar 3
+            </div>
+            <div class="schedule flex">
+              <div class="w-20 ph3">
+                <div class="schedule-time">10:30</div>
+                <div class="schedule-event">Coffee + Brunch</div>
+              </div>
+              <div class="w-20 ph3">
+                <div class="schedule-time">12:30</div>
+                <div class="schedule-event">Leadership & Design Systems</div>
+              </div>
+              <div class="w-20 ph3">
+                <div class="schedule-time">14:30</div>
+                <div class="schedule-event">Design for Future Worlds</div>
+              </div>
+              <div class="w-20 ph3">
+                <div class="schedule-time">15:30</div>
+                <div class="schedule-event">Pixels and Psychology</div>
+              </div>
+              <div class="w-20 ph3">
+                <div class="schedule-time">19:45</div>
+                <div class="schedule-event">VR/AR in 2030 and Beyond</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Registration -->
+        <div class="pt5-ns mb4 mb5-ns" id="register">
+          <h1 class="heading heading-orange">
+            Register
+          </h1>
+
+          <div class="flex flex-wrap mb4 mb5-ns">
+            <div class="col-12 sm-col-6 cover register-image"></div>
+            <div class="col-12 sm-col-6 register relative bg-orange orange">
+              <div class="front location flex flex-wrap pa4 items-center bg-orange relative z-2 col-12">
+                <p class="mt0 mb4 col-12">3 March, 2018
+                  <br> Melbourne, Australia
+                </p>
+                <p class="mt0 mb4 col-12">Fitzroy Social
+                  <br> 222 Brunswick St, Fitzroy VIC 3065
+                </p>
+                <button class="button button-small button-outline register-button">Register</button>
+              </div>
+              <form action="https://api.superhi.com/api/test/orders" class="back form z-1 pa4 col-12" id="payment-form">
+                <div class="spinner"></div>
+                <h3 class='mt0 mb2 form-title'>Your details</h3>
+                <div class='form-fields'>
+                  <input name="name" class="mb2 db" placeholder="Name" id="name">
+                  <input name="email" class="mb2 db" placeholder="Email" id="email">
+                  <div id="card-element" class="mb2"></div>
+                  <div id="card-errors" role="alert"></div>
+                  <div class="pt2">
+                    <button class="button button-small">Buy ticket for $100 AUD</button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flex flex-wrap justify-between pt5-ns mb4 mb5-ns">
+          <div class="col-12 sm-col-5 sm-indent-1 mb4 mb0-ns">
+            <img src="images/about-4.jpg" class="image fade db">
+          </div>
+          <div class="col-12 sm-col-5">
+            <img src="images/about-5.jpg" class="image fade db">
+          </div>
+        </div>
 
     </div>
 
+    <footer class="footer pv3 pv4-ns">
+      <div class="container flex justify-between items-center">
+        <a href="#top" class="footer-link contain bg-center bg-no-repeat"></a>
+        <nav class="footer-nav flex items-center">
+          <a href="https://twitter.com" class="no-underline db">
+              <img src="images/twitter.svg" class="db">
+            </a>
+          <a href="https://facebook.com" class="no-underline ml3 db">
+              <img src="images/facebook.svg" class="db">
+            </a>
+        </nav>
+      </div>
+    </footer>
+
+<script src="tilt.js"></script>
 <script src="in-view.js"></script>
 <script src="main.js"></script>
-
   </body>
 </html>

@@ -16,3 +16,9 @@ inView('.header')
 .on('exit', el => {
   desktopHeader.classList.add('visible')
 });
+
+// enabling tilt library
+VanillaTilt.init(document.querySelectorAll('.image'), {
+  max:24,
+  speed:400
+})

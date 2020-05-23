@@ -4,7 +4,7 @@
 }
 
 body{
-font-family: 'HK-HKGrotesk-Medium', sans-sans-serif;
+font-family: 'HK-Grotesk-Medium', sans-serif;
 font-size: 18px;
 line-height: 1.5;
 color: #414141;
@@ -21,7 +21,9 @@ a {
 }
 
 #about .heading-orange,
-#speakers .heading-orange{
+#speakers .heading-orange,
+#schedule .heading-orange,
+#register .heading-orange{
   font-size: 120px;
   -webkit-text-stroke-color: var(--orange);
   margin-bottom: 3rem;
@@ -71,4 +73,56 @@ blockquote{
 .speaker-title {
   color: #979797;
   font-family: 'HK-Grotesk-Regular', sans-serif;
+}
+
+.schedule-container{
+  border: solid 3px var(--orange);
+  /* gives us scrolling behaviour on touch screen devices */
+  -webkit-overflow-scrolling:touch;
+}
+
+.schedule-container::-webkit-scrollbar {
+  width:12px;
+  height: 14px;
+  background-color: transparent;
+}
+
+.schedule-container::-webkit-scrollbar-thumb{
+  background-color: var(--orange);
+  border: solid 2px #fff;
+}
+
+.schedule {
+  padding: 48px 24px;
+}
+
+
+.schedule-time {
+  color: var(--orange);
+  font-size: 36px;
+  font-family: 'HK-Grotesk-Bold', sans-serif;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.schedule-day {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  color:#fff;
+  background-color: var(--orange);
+  padding: 24px;
+  line-height: 1;
+  text-align: center;
+  font-size: 24px;
+}
+
+.footer {
+  background-color: #222;
+}
+
+.footer-link {
+  width:131px;
+  height: 40px;
+  background-image: url(images/logo.svg);
 }
