@@ -126,3 +126,13 @@ blockquote{
   height: 40px;
   background-image: url(images/logo.svg);
 }
+
+
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.visible {
+  opacity: 1;
+}
